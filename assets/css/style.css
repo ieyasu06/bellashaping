@@ -960,7 +960,7 @@ section {
 }
 .portfolio .portfolio-wrap::before {
   content: "";
-  background: rgba(255, 255, 255, 0.75);
+  background: rgba(241, 236, 236, 0.75);
   position: absolute;
   left: 30px;
   right: 30px;
@@ -996,8 +996,8 @@ section {
   position: absolute;
   top: 35px;
   left: 35px;
-  border-top: 3px solid rgba(1, 41, 112, 0.2);
-  border-left: 3px solid rgba(1, 41, 112, 0.2);
+  border-top: 3px solid rgba(41, 38, 29, 0.2);
+  border-left: 3px solid rgba(41, 38, 29, 0.2);
   transition: all 0.5s ease 0s;
   z-index: 9994;
 }
@@ -1016,7 +1016,7 @@ section {
 }
 .portfolio .portfolio-wrap .portfolio-info h4 {
   font-size: 20px;
-  color: #012970;
+  color: #29261D;
   font-weight: 700;
 }
 .portfolio .portfolio-wrap .portfolio-info p {
@@ -1033,7 +1033,7 @@ section {
 }
 .portfolio .portfolio-wrap .portfolio-links a {
   color: #fff;
-  background: #4154f1;
+  background: #FF66C4;
   margin: 10px 2px;
   width: 36px;
   height: 36px;
@@ -1048,7 +1048,8 @@ section {
   line-height: 0;
 }
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  background: #5969f3;
+  /*background: #5969f3;*/
+  background: #f321a2;
 }
 .portfolio .portfolio-wrap:hover img {
   transform: scale(1.1);

@@ -117,8 +117,8 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="service-box blue">
               <i class="ri-discuss-line icon"></i>
-              <h3>Nesciunt Mete</h3>
-              <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
+              <h3>Lipocavitation</h3>
+              <p>Our Lipocavitation is a non-invasive procedure using ultrasound to break down fat from our body. If you seek fat reduction solution to specific areas of your body without going under the knife, this procedure is a good alternative.</p>
               <!-- <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> -->
             </div>
           </div>
@@ -126,8 +126,8 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="service-box orange">
               <i class="ri-discuss-line icon"></i>
-              <h3>Eosle Commodi</h3>
-              <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
+              <h3>Body Sculpting</h3>
+              <p>Our body sculpting service is a procedure that breaks down fat cells through controlled temperatures, vibrations, and other tools to help our body release them out of problem areas. This treatment is non-invasive and has little to no side effects.</p>
               <!-- <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> -->
             </div>
           </div>
@@ -135,8 +135,8 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
             <div class="service-box green">
               <i class="ri-discuss-line icon"></i>
-              <h3>Ledo Markt</h3>
-              <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+              <h3>Body and Face Contouring</h3>
+              <p>The  technology we use for this procedure creates deep thermal heating in the connective tissue which promotes increase in collagen deposits and cellular metabolism  which results to a noticeable reduction in skin volume and laxicity. It also help promotes the formation of collagen, leaving our skin looking firm, tight and more youthful.</p>
               <!-- <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> -->
             </div>
           </div>
@@ -173,6 +173,190 @@
       </div>
 
     </section><!-- End Services Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Services</h2>
+          <!-- <p>Services</p> -->
+        </header>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-packages">Packages</li>
+              <li data-filter=".filter-lipomatt">Lipo Matt 360</li>
+              <li data-filter=".filter-consult">Consultation</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-packages">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Silver Session</h4>
+                <!-- <p>$160.00 / 1 hour</p>
+                <p>This procedure is done using radio frequency, cavitation, and laser lipo in any (1) one of the following areas: abdomen, waist, back, thighs, arm, or inner thighs. Book a consultation meeting with us so we can recommend the specific areas we need to prioritize in your session.</p> -->
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Silver Session"><i class="bi bi-plus"></i></a>
+                  <a href="portfolio-details.php?service=0" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-packages">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Gold Session</h4>
+                <!-- <p>$280.00 / 2 hours</p>
+                <p>This procedure is our best-seller and it aims to burn and shape the body especially in the mommy pouch area and minimize cellulite appearance. The package consists of Cavitation, Lipo Matt 360, Radio frequency, and Vacuum therapy. The treatment is done in two (2) areas of your choice: abdomen, waist, back, thighs, arm, or inner thighs. Book a consultation with us so we can recommend the specific areas we need to prioritize in your session.</p> -->
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Gold Session"><i class="bi bi-plus"></i></a>
+                  <a href="portfolio-details.php?service=1" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-packages">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Diamond Session</h4>
+                <!-- <p>$350.00 / 3 hours</p>
+                <p>This is the most intense package from  Bella Shaping using radio frequency, cavitation, and laser lipo. The procedure involves three (3) body area shaping sessions of your choice: abdomen, waist, arms, thighs, back, sides, armpit. This aims to burn and shape the body especially in the mommy pouch area and minimize cellulite appearance.  Book a consultation with us so we can recommend the specific areas we need to prioritize in your session.</p> -->
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Diamond Session"><i class="bi bi-plus"></i></a>
+                  <a href="portfolio-details.php?service=2" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-packages">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Full Body Makeover</h4>
+                <!-- <p>$450.00 / 4 hours</p>
+                <p>This is a 4-hour complete makeover session with treatment focused on tummy, back, side, thighs, butt area. </p> -->
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Full Body Makeover"><i class="bi bi-plus"></i></a>
+                  <a href="portfolio-details.php?service=3" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>RF Skin Tightening</h4>
+                <!-- <p>$150.00/ 1 hour</p>
+                <p>This is a nonsurgical and noninvasive skin tightening and anti-aging treatment that stimulates the skin's ability to produce collagen and tighten up any loose skin, diminishes fine lines, scars and stretch marks.</p> -->
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="RF Skin Tightening"><i class="bi bi-plus"></i></a>
+                  <a href="portfolio-details.php?service=4" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Full Face Lifting</h4>
+                <!-- <p>$200.00 / 1 hour</p>
+                <p>This treatment is a skin lifting procedure for face that helps reduce wrinkles, focused on the cheeks, under eye and forehead. Helps keep a youthful look for the skin. </p> -->
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Full Face Lifting"><i class="bi bi-plus"></i></a>
+                  <a href="portfolio-details.php?service=5" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-lipomatt">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Lipo Matt 360</h4>
+                <!-- <p>$150.00 / 1 hour</p>
+                <p>$65.00 / 30 mins</p>
+                <p>This is a noninvasive produre that is fast and effective in breaking down fat cells for fat loss and detoxification, it helps reduce the appearance of cellulites, increase collagen formation and benefits weight loss. The procedure is for 1 hour/30 mins focused on tummy, waist and back area.</p> -->
+                <p>One Area</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Lipo Matt 360 One Area"><i class="bi bi-plus"></i></a>
+                  <a href="portfolio-details.php?service=6" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+                <p>Two Area</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Lipo Matt 360 Two Area"><i class="bi bi-plus"></i></a>
+                  <a href="portfolio-details.php?service=6" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-lipomatt">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Cellulite Treatment</h4>
+                <!-- <p>$250.00 / 1 hour</p>
+                <p>This is a noninvasive produre that is fast and effective in breaking down fat cells for fat loss and detoxification, it helps reduce the appearance of cellulites, increase collagen formation and benefits weight loss. This treatment can be done on your stomach, lower back, upper back, arms, front of thighs, and back of thighs. The duration is for 1 hour focused on 2 areas.</p> -->
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Cellulite Treatment"><i class="bi bi-plus"></i></a>
+                  <a href="portfolio-details.php?service=7" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-consult">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Consultation</h4>
+                <!-- <p>$130.00 / 70mins</p>
+                <p>This is a cellulite treatment that helps reduce the appearance of cellulites and promotes tightening of the skin. The procedure is done using vacuum therapy, RF skin tightening and wood therapy on both legs.</p> -->
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Consultation"><i class="bi bi-plus"></i></a>
+                  <a href="portfolio-details.php?service=8" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row font-italic mt-5" data-aos="fade-up" data-aos-delay="100" style="font-style: italic;">
+          <div class="col-lg-12 font-italic justify-content-center">
+            <p style="font-weight: bold;">Important Reminders and Cancellation Policy:</p>
+            <ul>
+              <li>All clients are required to wear a mask when you enter Bella Shaping premises.</li>
+              <li>Kids are not allowed to enter Bella Shaping premises.</li>
+              <li>For everyone's safety, please reschedule your appointment if you are feeling sick on the day of your booking.</li>
+              <li>Do not be late for more than 15 minutes otherwise, you will need to reschedule your appointment with us.</li>
+            </ul>
+            <p style="font-weight: bold;">Cancellation must be made 24 hours or more in advance of the booked appointment.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- End Portfolio Section -->
 
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
@@ -225,8 +409,8 @@
                   <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
                 </div>
                 <p>
-                  The results areamazing! I am so happy with how my skin looks like now.
-                  <h3>MARIA LUX</h3>
+                  The results are amazing! I am so happy with how my skin looks like now.
+                  <h3>Kristine</h3>
                 </p>
               </div>
             </div><!-- End testimonial item -->
@@ -238,7 +422,7 @@
                 </div>
                 <p>
                   Excellent and quick service, probably the best I have ever had.
-                  <h3>CHRISTINE</h3>
+                  <h3>Anna</h3>
                 </p>
               </div>
             </div><!-- End testimonial item -->
@@ -249,8 +433,8 @@
                   <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">  
                 </div>
                 <p>
-                  I love the wood therapy. It's so relaxing. Rhoda did a good job! I'll be back after 2 weeks.
-                  <h3>JESSICA</h3>
+                  I love the wood therapy. It's so relaxing.  Rhoda did a good job! I'll be back after 2 weeks.
+                  <h3>Samantha</h3>
                 </p>
               </div>
             </div><!-- End testimonial item -->
@@ -264,7 +448,7 @@
     </section><!-- End Testimonials Section -->
 
 
-    <section id="instagram" class="instagram">
+<!--     <section id="instagram" class="instagram">
 
       <div class="container" data-aos="fade-up">
 
@@ -272,9 +456,9 @@
           <h2>BELLA SHAPING ON INSTAGRAM</h2>
         </header>
         <div  id="instafeed" class="row gy-4" data-aos="fade-up" data-aos-delay="200"></div>
-        <!-- <div id="instafeed"></div> -->
+
       </div>
-    </section>
+    </section> -->
 
 
     <!-- ======= About Section ======= -->
@@ -350,7 +534,7 @@
   <script type="text/javascript">
     var feed = new Instafeed({
       accessToken: 'IGQVJXY1lCTkl1VnNPN0FYWnJNWnRjTG1UUWYzMThjQlUwazludm81RGlPeW4wdnZAkWkx6RnBYaUVlZAXBrcTFmVVZA3RDJtX1RPaUVIQTZAraWdHYmlJZAk9sdzZAMQWJmdElDTWY5a1JB',
-      template: '<div class="col-lg-4 col-md-6 portfolio-item filter-app"><a href="{{link}}" title="{{caption}}" target="_blank"><img src="{{image}}" class="img-fluid" title="{{caption}}"></a></div>'
+      template: '<div class="col-lg-4 col-md-6"><a href="{{link}}" title="{{caption}}" target="_blank"><img src="{{image}}" class="img-fluid" title="{{caption}}"></a></div>'
     });
     feed.run();
 </script>
