@@ -69,7 +69,7 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="hero d-flex align-items-center">
-    <video id="video1" preload="" autoplay="" muted="" playsinline="" loop="" style="width:100%; position: absolute; transform: rotateY(180deg); -webkit-transform:rotateY(180deg); /* Safari and Chrome */ -moz-transform:rotateY(180deg); height: inherit; padding-top: 84px; object-fit: fill;">
+    <video id="video1" preload="" autoplay="" muted="" playsinline="" loop="">
       <source src="assets/img/banner/Banner Video.mp4" type="video/mp4">
     </video>
 

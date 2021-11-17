@@ -37,6 +37,18 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 10px 0 10px;
 }
 
+#video1
+{
+  width:100%;
+  position: absolute;
+  transform: rotateY(180deg);
+  -webkit-transform:rotateY(180deg); /* Safari and Chrome */
+  -moz-transform:rotateY(180deg);
+  height: inherit;
+  padding-top: 84px;
+  object-fit: fill;
+}
+
 /*--------------------------------------------------------------
 # Sections
 --------------------------------------------------------------*/
@@ -436,7 +448,7 @@ section {
 }
 @media (max-width: 991px) {
   .hero {
-    height: auto;
+    /*height: auto;*/
     padding: 120px 0 60px 0;
   }
   .hero .hero-img {
@@ -445,6 +457,11 @@ section {
   }
   .hero .hero-img img {
     width: 80%;
+  }
+
+  #video1
+  {
+    padding-top: 0;
   }
 }
 @media (max-width: 768px) {
