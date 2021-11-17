@@ -448,7 +448,7 @@
     </section><!-- End Testimonials Section -->
 
 
-<!--     <section id="instagram" class="instagram">
+    <section id="instagram" class="instagram">
 
       <div class="container" data-aos="fade-up">
 
@@ -458,7 +458,7 @@
         <div  id="instafeed" class="row gy-4" data-aos="fade-up" data-aos-delay="200"></div>
 
       </div>
-    </section> -->
+    </section>
 
 
     <!-- ======= About Section ======= -->
