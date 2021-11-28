@@ -57,11 +57,19 @@ if(isset($_POST['send_email']))
         $mail->Send();
 
         $success=true;
+
+        echo "<script>alert('Inquiry sent.');</script>";
     } catch(Exception $e){
         // backend notif if sending failed.
-        echo "Fail :(";
+        echo "<script>alert('Your message was not delivered. Please try later.');</script>";
     }
 }
+
+// <script>
+// function myFunction() {
+//   alert("Hello! I am an alert box!");
+// }
+// </script>
 
 ?>
 
