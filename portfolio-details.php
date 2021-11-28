@@ -144,6 +144,7 @@ if(isset($_GET["service"]))
                 <!-- <li><strong>Project date</strong>: 01 March, 2020</li>
                 <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li> -->
               </ul>
+
             </div>
             <div class="portfolio-description">
               <h2><?php if($service_id==7||$service_id==8)
@@ -156,6 +157,20 @@ if(isset($_GET["service"]))
                 <?php echo $services[$service_id][4]; ?>
               </p>
             </div>
+
+            <div class="row font-italic mt-5" data-aos="fade-up" data-aos-delay="100" style="font-style: italic;">
+              <div class="col-lg-12 font-italic justify-content-center">
+                <p style="font-weight: bold;">Important Reminders and Cancellation Policy:</p>
+                <ul>
+                  <li>All clients are required to wear a mask when you enter Bella Shaping premises.</li>
+                  <li>Kids are not allowed to enter Bella Shaping premises.</li>
+                  <li>For everyone's safety, please reschedule your appointment if you are feeling sick on the day of your booking.</li>
+                  <li>Do not be late for more than 15 minutes otherwise, you will need to reschedule your appointment with us.</li>
+                </ul>
+                <p style="font-weight: bold;">Cancellation must be made 24 hours or more in advance of the booked appointment.</p>
+              </div>
+            </div>
+            
           </div>
 
         </div>
@@ -163,34 +178,11 @@ if(isset($_GET["service"]))
       </div>
     </section><!-- End Portfolio Details Section -->
 
-  <!-- ======= About Section ======= -->
-    <section id="contact" class="about">
-
-      <div class="container gx-0" data-aos="fade-up">
-        <div class="row gx-0">
-
-          <div class="col-lg-5 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
-            <h2>CONTACT US</h2>
-          </div>
-
-          <div class="col-lg-7 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
-            <div class="content">
-              <p><i class="bi bi-geo-alt me-2" style="color: #FF66C4;"></i> 5541 Arrow Highway, Montclair, CA 91763</p>
-              <p><i class="bi bi-telephone me-2" style="color: #FF66C4;"></i> 909-990-7644</p>
-              <p><i class="bi bi-envelope me-2" style="color: #FF66C4;"></i> <a href="mailto:bellashaping@gmail.com">bellashaping@gmail.com</a></p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-    </section><!-- End About Section -->
-
 
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer">
+  <!-- <footer id="footer" class="footer">
 
     <div class="container" style="visibility: hidden;">
       <div class="copyright">
@@ -200,7 +192,7 @@ if(isset($_GET["service"]))
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
-  </footer><!-- End Footer -->
+  </footer> --><!-- End Footer -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 

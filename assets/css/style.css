@@ -12,9 +12,22 @@
   scroll-behavior: smooth;
 }
 
+
+@font-face {
+  font-family: GaretBook;
+  src: url("Garet/Garet Book.ttf");
+}
+
+@font-face {
+  font-family: GaretRegular;
+  src: url("Garet/Garet Regular.ttf");
+}
+
+
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: GaretBook;
   color: #29261D;
+  background: #f1ecec;
 }
 
 a {
@@ -28,7 +41,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Nunito", sans-serif;
+  font-family: GaretRegular;
 }
 
 .ig-img
@@ -47,6 +60,23 @@ h1, h2, h3, h4, h5, h6 {
   height: inherit;
   padding-top: 84px;
   object-fit: fill;
+}
+
+.bella-url
+{
+  color: white;
+  font-size: 50px;
+  text-shadow: 2px 2px #29261d;
+}
+
+.wedo
+{
+  background: #FF66C4;
+}
+
+.wedo p
+{
+  font-size: 26px;
 }
 
 /*--------------------------------------------------------------
@@ -91,7 +121,7 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 15px 0;
-  background: #012970;
+  background: #FF66C4;
   min-height: 40px;
   margin-top: 82px;
   color: #fff;
@@ -140,7 +170,7 @@ section {
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background: #4154f1;
+  background: #29261D;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -175,10 +205,10 @@ section {
   transition: all 0.5s;
   z-index: 997;
   padding: 20px 0;
-  background: white;
+  background: #f1ecec;
 }
 .header.header-scrolled {
-  background: #fff;
+  background: #f1ecec;
   padding: 15px 0;
   box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
 }
@@ -194,7 +224,7 @@ section {
   font-weight: 700;
   letter-spacing: 1px;
   color: #29261D;
-  font-family: "Nunito", sans-serif;
+  font-family: GaretRegular;
   margin-top: 3px;
 }
 
@@ -222,10 +252,10 @@ section {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 30px;
-  font-family: "Nunito", sans-serif;
+  font-family: GaretRegular;
   font-size: 16px;
   font-weight: 700;
-  color: #F1ECEC;
+  color: #646159;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -334,7 +364,7 @@ section {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(1, 22, 61, 0.9);
+  background: rgba(255, 102, 196, 0.9);
   transition: 0.3s;
 }
 .navbar-mobile .mobile-nav-toggle {
@@ -358,7 +388,7 @@ section {
 .navbar-mobile a, .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #012970;
+  color: #29261D;
 }
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
   color: #4154f1;
@@ -399,15 +429,17 @@ section {
 .hero {
   width: 100%;
   height: 100vh;
-  background: url(../img/hero-bg.png) top center no-repeat;
+  background: url("../img/Woman Body.png") top center no-repeat;
   background-size: cover;
 }
 .hero h1 {
   margin: 0;
-  font-size: 64px;
+  /*font-size: 64px;*/
+  font-size: 54px;
   font-weight: 700;
   color: #29261D;
-  font-family: playfair display;
+  /*font-family: playfair display;*/
+  font-family: GaretRegular;
 }
 .hero h2 {
   color: #444444;
@@ -417,17 +449,17 @@ section {
 .hero .btn-get-started {
   margin-top: 30px;
   line-height: 0;
-  padding: 15px 40px;
+  padding: 28px 40px;
   border-radius: 4px;
   transition: 0.5s;
   color: #29261D;
-  background: white;
+  background: #FF66C4;
   box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
 }
 .hero .btn-get-started span {
-  font-family: "Nunito", sans-serif;
-  font-weight: 600;
-  font-size: 16px;
+  font-family: GaretRegular;
+  font-weight: bold;
+  font-size: 24px;
   letter-spacing: 1px;
 }
 .hero .btn-get-started i {
@@ -463,6 +495,27 @@ section {
   {
     padding-top: 0;
   }
+
+  .bella-url
+  {
+    font-size: 40px;
+  }
+
+  #form_holder
+  {
+    width: 100% !important;
+    margin-top: 0 !important;
+  }
+
+  .soc_img
+  {
+    max-width: 22% !important;
+  }
+
+  p
+  {
+    font-size: 20px !important;
+  }
 }
 @media (max-width: 768px) {
   .hero {
@@ -476,6 +529,13 @@ section {
   }
   .hero .hero-img img {
     width: 100%;
+  }
+  .section-header h2 {
+    font-size: 40px;
+  }
+  .about h2
+  {
+    font-size: 40px !important;
   }
 }
 
@@ -517,7 +577,7 @@ section {
   box-shadow: 0px 5px 25px rgba(65, 84, 241, 0.3);
 }
 .about .btn-read-more span {
-  font-family: "Nunito", sans-serif;
+  font-family: GaretRegular;
   font-weight: 600;
   font-size: 16px;
   letter-spacing: 1px;
@@ -588,7 +648,7 @@ section {
 .counts .count-box p {
   padding: 0;
   margin: 0;
-  font-family: "Nunito", sans-serif;
+  font-family: GaretRegular;
   font-size: 14px;
 }
 
@@ -887,7 +947,7 @@ section {
   transition: none;
   font-size: 16px;
   font-weight: 400;
-  font-family: "Nunito", sans-serif;
+  font-family: GaretRegular;
   font-weight: 600;
   transition: 0.3s;
   border: 1px solid #4154f1;
@@ -944,7 +1004,7 @@ section {
   margin: 0 auto 25px auto;
   list-style: none;
   text-align: center;
-  background: white;
+  background: #F1ECEC;
   border-radius: 50px;
   padding: 2px 15px;
 }
@@ -959,11 +1019,11 @@ section {
   margin: 0 4px 8px 4px;
   transition: 0.3s;
   border-radius: 50px;
-  border: 1px solid #fff;
+  border: 1px solid #F1ECEC;
 }
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  color: #4154f1;
-  border-color: #4154f1;
+  color: #29261D;
+  border-color: #29261D;
 }
 .portfolio #portfolio-flters li:last-child {
   margin-right: 0;
@@ -1389,19 +1449,49 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+
+#form_holder
+{
+  background: white;
+  border-radius: 20px;
+  width: 80%;
+  margin-top: -200px;
+}
+.contact
+{
+  background: #FF66C4;
+  color: white;
+  overflow: inherit;
+  margin-top: 200px;
+  margin-bottom: -24px;
+}
+
+.contact .section-header
+{
+  text-align: left;
+  color: white;
+}
+
+.contact .section-header h2
+{
+  text-align: left;
+  color: white;
+  font-family: GaretRegular;
+}
+
 .contact .info-box {
   color: #444444;
-  background: #fafbff;
+  background: #F1ECEC;
   padding: 30px;
 }
 .contact .info-box i {
   font-size: 38px;
   line-height: 0;
-  color: #4154f1;
+  color: #FF66C4;
 }
 .contact .info-box h3 {
   font-size: 20px;
-  color: #012970;
+  color: #29261D;
   font-weight: 700;
   margin: 20px 0 10px 0;
 }
@@ -1500,10 +1590,15 @@ section {
 # Instagram
 --------------------------------------------------------------*/
 
-.instagram {
+/*.instagram {
   background: #FF66C4;
 }
+*/
 
+.soc_img
+{
+  max-width: 5%;
+}
 
 /*--------------------------------------------------------------
 # Blog
@@ -2002,14 +2097,14 @@ section {
   font-weight: 700;
   letter-spacing: 1px;
   color: #012970;
-  font-family: "Nunito", sans-serif;
+  font-family: GaretRegular;
   margin-top: 3px;
 }
 .footer .footer-top .footer-info p {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Nunito", sans-serif;
+  font-family: GaretRegular;
 }
 .footer .footer-top .social-links a {
   font-size: 20px;

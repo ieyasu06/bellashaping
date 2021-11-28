@@ -1,3 +1,71 @@
+<?php
+
+//Import PHP mailer files and functions
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require 'assets/phpmailer/Exception.php';
+require "assets/phpmailer/PHPMailer.php";
+require 'assets/phpmailer/SMTP.php';
+
+
+if(isset($_POST['send_email']))
+{
+
+    //Get data from form upon submit.
+    $name=$_POST['name'];
+    $email=$_POST['email'];
+    $message=$_POST['message'];
+
+    $mail = new PHPMailer(true);
+
+
+    //Set recepients of the email
+    $email = "bellashaping@gmail.com"; 
+    $name = "Bella Shaping";
+
+    $email1 = "nobunaga_hidetada@yahoo.com"; 
+    $name1 = "Jolo";
+
+
+    $email_from =$email;
+    $name_from = $name;
+    $send_using_gmail = 1;
+
+    // Send mail using Gmail
+    if($send_using_gmail){
+        $mail->IsSMTP(); // telling the class to use SMTP
+        $mail->SMTPAuth = true; // enable SMTP authentication
+        $mail->SMTPSecure = "ssl"; // sets the prefix to the servier
+        $mail->Host = "smtp.gmail.com"; // sets GMAIL as the SMTP server
+        $mail->Port = 465; // set the SMTP port for the GMAIL server
+        $mail->Username = "bellashaping101mail@gmail.com"; // GMAIL username
+        $mail->IsHTML(false);
+        $mail->Password = "Checkbox123!"; // GMAIL password
+    }
+
+    // Typical mail data
+    $mail->AddAddress($email, $name);
+    $mail->AddAddress($email1, $name1);
+
+    $mail->SetFrom($email_from, $name_from);
+    $mail->Subject = "Inquiry";
+    $mail->Body = $message;
+
+    try{
+        //Try sending email here
+        $mail->Send();
+
+        $success=true;
+    } catch(Exception $e){
+        // backend notif if sending failed.
+        echo "Fail :(";
+    }
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -56,7 +124,7 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto" href="#portfolio">Services</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto" href="#testimonials">Testimonials</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact Us</a></li>
@@ -69,9 +137,9 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="hero d-flex align-items-center">
-    <video id="video1" preload="" autoplay="" muted="" playsinline="" loop="">
+    <!-- <video id="video1" preload="" autoplay="" muted="" playsinline="" loop="">
       <source src="assets/img/banner/Banner Video.mp4" type="video/mp4">
-    </video>
+    </video> -->
 
     <div class="container">
       <div class="row">
@@ -80,15 +148,15 @@
 
         </div>
 
-        <div class="col-lg-6 text-end"> <!-- d-flex flex-column justify-content-center -->
+        <div class="col-lg-6 text-center"> <!-- d-flex flex-column justify-content-center -->
           
           <img src="assets/img/logo-bella.png" style="max-width: 58%; position: relative;" class="rounded float-right" alt="">
           <h1 data-aos="fade-up">SHAPING THE</h1>
           <h1 data-aos="fade-up" data-aos-delay="400">FUTURE OF BEAUTY</h1>
           <div data-aos="fade-up" data-aos-delay="600">
-            <div class="text-center text-lg-end">
+            <div class="text-center text-lg-center">
               <a href="#about" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
-                <span>Book Now</span>
+                <span>Learn More</span>
                 <!-- <i class="bi bi-arrow-right"></i> -->
               </a>
             </div>
@@ -102,77 +170,26 @@
 
   <main id="main">
 
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
-
+    <section class="wedo">
       <div class="container" data-aos="fade-up">
 
         <header class="section-header">
-          <h2>Services</h2>
-          <!-- <p>Services</p> -->
+          <h2>WHAT WE DO</h2>
         </header>
 
-        <div class="row gy-4">
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-box blue">
-              <i class="ri-discuss-line icon"></i>
-              <h3>Lipocavitation</h3>
-              <p>Our Lipocavitation is a non-invasive procedure using ultrasound to break down fat from our body. If you seek fat reduction solution to specific areas of your body without going under the knife, this procedure is a good alternative.</p>
-              <!-- <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> -->
+        <div class="row">
+          <div class="col-lg-12 justify-content-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et ligula viverra, facilisis sem non, egestas purus. Pellentesque tortor lacus, faucibus ut mollis et, scelerisque nec tortor. Etiam interdum lorem vitae sem suscipit scelerisque. Sed semper, nulla nec molestie fringilla, metus ante auctor nisl, in ultricies nibh magna a magna. Morbi lorem est, tincidunt euismod posuere id, suscipit non massa. Ut turpis ex, pellentesque eget nulla et, blandit sodales nisl. In pellentesque imperdiet facilisis. In posuere eu ipsum quis fringilla. Etiam id ex vitae nibh eleifend facilisis eu ut est. Curabitur vel diam tempus, porttitor magna nec, vulputate arcu. Etiam consequat lectus ac leo sagittis, non convallis dui venenatis. Morbi scelerisque lectus in quam ultricies aliquet.</p>
+              
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-box orange">
-              <i class="ri-discuss-line icon"></i>
-              <h3>Body Sculpting</h3>
-              <p>Our body sculpting service is a procedure that breaks down fat cells through controlled temperatures, vibrations, and other tools to help our body release them out of problem areas. This treatment is non-invasive and has little to no side effects.</p>
-              <!-- <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> -->
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-box green">
-              <i class="ri-discuss-line icon"></i>
-              <h3>Body and Face Contouring</h3>
-              <p>The  technology we use for this procedure creates deep thermal heating in the connective tissue which promotes increase in collagen deposits and cellular metabolism  which results to a noticeable reduction in skin volume and laxicity. It also help promotes the formation of collagen, leaving our skin looking firm, tight and more youthful.</p>
-              <!-- <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> -->
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-box red">
-              <i class="ri-discuss-line icon"></i>
-              <h3>Asperiores Commodi</h3>
-              <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
-              <!-- <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> -->
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-box purple">
-              <i class="ri-discuss-line icon"></i>
-              <h3>Velit Doloremque.</h3>
-              <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
-              <!-- <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> -->
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="700">
-            <div class="service-box pink">
-              <i class="ri-discuss-line icon"></i>
-              <h3>Dolori Architecto</h3>
-              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
-              <!-- <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> -->
-            </div>
-          </div>
+          
 
         </div>
-
       </div>
-
-    </section><!-- End Services Section -->
+    </section>
 
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
@@ -341,19 +358,6 @@
 
         </div>
 
-        <div class="row font-italic mt-5" data-aos="fade-up" data-aos-delay="100" style="font-style: italic;">
-          <div class="col-lg-12 font-italic justify-content-center">
-            <p style="font-weight: bold;">Important Reminders and Cancellation Policy:</p>
-            <ul>
-              <li>All clients are required to wear a mask when you enter Bella Shaping premises.</li>
-              <li>Kids are not allowed to enter Bella Shaping premises.</li>
-              <li>For everyone's safety, please reschedule your appointment if you are feeling sick on the day of your booking.</li>
-              <li>Do not be late for more than 15 minutes otherwise, you will need to reschedule your appointment with us.</li>
-            </ul>
-            <p style="font-weight: bold;">Cancellation must be made 24 hours or more in advance of the booked appointment.</p>
-          </div>
-        </div>
-
       </div>
 
     </section><!-- End Portfolio Section -->
@@ -364,22 +368,16 @@
       <div class="container-fluid gx-0" data-aos="fade-up">
         <div class="row gx-0">
 
-          <div class="col-lg-5 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
-            <img src="assets/img/About Us.jpg" class="img-fluid" alt="">
+          <div class="col-lg-7 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+            <img src="assets/img/Legs pink2.png" class="img-fluid" alt="">
           </div>
 
-          <div class="col-lg-7 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-5 justify-content-center text-center" data-aos="fade-up" data-aos-delay="200" style="background: #FF66C4;">
             <div class="content">
 
               <h2>ABOUT US</h2>
               <p>Our goal is to motivate and inspire everyone to feel beautiful while working towards the best version of themselves. Our passion is to provide the right services to help our clients look and feel beautiful.</p>
               <p>It is our vision to inspire beauty and self care to everyone.</p>
-              <div class="text-center text-lg-end">
-                <a href="#" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
-                  <span>Learn More</span>
-                  <!-- <i class="bi bi-arrow-right"></i> -->
-                </a>
-              </div>
             </div>
           </div>
 
@@ -390,14 +388,36 @@
 
     </section><!-- End About Section -->
 
+    <!-- ======= Filler Section ======= -->
+    <!-- <section style="background: url(assets/img/bella-legs.jpg) no-repeat top center; background-size: cover;">
+
+      <div class="container gx-0" data-aos="fade-up">
+        <div class="row">
+
+          <div class="col-lg-5 d-flex align-items-center text-lg-start text-center" data-aos="zoom-out" data-aos-delay="200">
+            <div class="w-100 text-lg-start text-center">
+              <p class="bella-url">bellashaping.com</p>
+            </div>
+          </div>
+
+          <div class="col-lg-7 text-lg-end text-center" data-aos="fade-up" data-aos-delay="200">
+            <img src="assets/img/logo-bella.png" class="img-fluid" alt="">
+          </div>
+
+          
+
+        </div>
+      </div>
+
+    </section> --><!-- End Filler Section -->
+
     <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials">
+    <!-- <section id="testimonials" class="testimonials">
 
       <div class="container" data-aos="fade-up">
 
         <header class="section-header">
           <h2>Our Review</h2>
-          <!-- <p>Our Review</p> -->
         </header>
 
         <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="200">
@@ -413,7 +433,7 @@
                   <h3>Kristine</h3>
                 </p>
               </div>
-            </div><!-- End testimonial item -->
+            </div>
 
             <div class="swiper-slide">
               <div class="testimonial-item">
@@ -425,7 +445,7 @@
                   <h3>Anna</h3>
                 </p>
               </div>
-            </div><!-- End testimonial item -->
+            </div>
 
             <div class="swiper-slide">
               <div class="testimonial-item">
@@ -437,7 +457,7 @@
                   <h3>Samantha</h3>
                 </p>
               </div>
-            </div><!-- End testimonial item -->
+            </div>
 
           </div>
           <div class="swiper-pagination"></div>
@@ -445,7 +465,7 @@
 
       </div>
 
-    </section><!-- End Testimonials Section -->
+    </section> --><!-- End Testimonials Section -->
 
 
     <section id="instagram" class="instagram">
@@ -453,42 +473,129 @@
       <div class="container" data-aos="fade-up">
 
         <header class="section-header">
-          <h2>BELLA SHAPING ON INSTAGRAM</h2>
+          <h2>@BELLASHAPING</h2>
         </header>
+
+        <div class="row gx-0">
+
+          <div class="col-lg-12 text-center justify-content-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="content">
+              <p>Nulla id ornare purus. Fusce aliquet sit amet enim vitae sagittis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi diam leo, mollis in nulla et, hendrerit egestas arcu. Aliquam turpis nibh, consequat ac maximus nec, condimentum vitae erat. Donec lacinia turpis magna, id semper sapien tincidunt non. Suspendisse porta justo eu sapien dictum, vel egestas eros vestibulum.</p>
+
+              <p class="mt3 mb-5">
+                <a href="https://facebook.com"><img src="assets/img/facebook.png" class="m-3 soc_img"></a>
+                <a href="https://instagram.com/bellashaping"><img src="assets/img/instagram.png" class="m-3 soc_img"></a>
+              </p>
+            </div>
+          </div>
+
+        </div>
+
         <div  id="instafeed" class="row gy-4" data-aos="fade-up" data-aos-delay="200"></div>
 
       </div>
     </section>
 
 
-    <!-- ======= About Section ======= -->
-    <section id="contact" class="about">
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
 
-      <div class="container gx-0" data-aos="fade-up">
-        <div class="row gx-0">
+      <div class="container" data-aos="fade-up">
 
-          <div class="col-lg-5 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
-            <h2>CONTACT US</h2>
+        <div class="row gy-4">
+
+          <div class="col-lg-6">
+
+            <header class="section-header">
+              <h2>GET IN TOUCH</h2>
+            </header>
+
+            <h4 class="mb-5">Hey! We are looking forward to start a project with you!</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.</p>
+
           </div>
 
-          <div class="col-lg-7 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
-            <div class="content">
-              <p><i class="bi bi-geo-alt me-2" style="color: #FF66C4;"></i> 5541 Arrow Highway, Montclair, CA 91763</p>
-              <p><i class="bi bi-telephone me-2" style="color: #FF66C4;"></i> 909-990-7644</p>
-              <p><i class="bi bi-envelope me-2" style="color: #FF66C4;"></i> <a href="mailto:bellashaping@gmail.com">bellashaping@gmail.com</a></p>
+          <div class="col-lg-6 d-flex justify-content-center">
+
+            <div id="form_holder" class="text-center p-4">
+
+              <p style="color: black; font-size: 40px; font-weight: bold;">CONTACT US</p>
+
+              <form id="formModalDemo" name="formModalDemo" method="post">
+
+
+                <div class="row pb-4">
+
+                  <div class="col-12">
+                    <div class="form-group">
+                      
+                      <input type="text" name="name" id="name" class="form-control" maxlength="150" placeholder="Name" required="">
+
+                    </div>
+                  </div>
+
+                </div>
+
+
+                <div class="row pb-4">
+
+                  <div class="col-12">
+                    <div class="form-group">
+                      
+                      <input type="email" name="email" id="email" class="form-control" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,63}$" maxlength="64" placeholder="Email Address" required="">
+
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="row pb-4">
+
+                  <div class="col-12">
+                    <div class="form-group">
+                      
+                      <textarea id="message" name="message" class="form-control" placeholder="Message" required="" row="6"></textarea>
+
+                    </div>
+                  </div>
+
+                </div>
+
+
+                <div class="row pb-4">
+
+                  <div class="col-12 text-center">
+                    <div class="form-group">
+
+                      <button type="submit" id="send_email" name="send_email" class="btn btn-primary ps-4 pe-4"><b>Send</b></button>
+
+                    </div>
+                  </div>
+
+                </div>
+
+
+              </form>
+
             </div>
+
+
           </div>
 
         </div>
+
       </div>
 
-    </section><!-- End About Section -->
+    </section><!-- End Contact Section -->
 
 
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer">
+  <!-- <footer id="footer" class="footer">
 
     <div class="container" style="visibility: hidden;">
       <div class="copyright">
@@ -498,7 +605,7 @@
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
-  </footer><!-- End Footer -->
+  </footer> --><!-- End Footer -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
@@ -534,7 +641,7 @@
   <script type="text/javascript">
     var feed = new Instafeed({
       accessToken: 'IGQVJXY1lCTkl1VnNPN0FYWnJNWnRjTG1UUWYzMThjQlUwazludm81RGlPeW4wdnZAkWkx6RnBYaUVlZAXBrcTFmVVZA3RDJtX1RPaUVIQTZAraWdHYmlJZAk9sdzZAMQWJmdElDTWY5a1JB',
-      template: '<div class="col-lg-4 col-md-6"><a href="{{link}}" title="{{caption}}" target="_blank"><img src="{{image}}" class="img-fluid" title="{{caption}}"></a></div>'
+      template: '<div class="col-lg-3 col-md-6"><a href="{{link}}" title="{{caption}}" target="_blank"><img src="{{image}}" class="img-fluid" title="{{caption}}"></a></div>'
     });
     feed.run();
 </script>
