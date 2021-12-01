@@ -638,9 +638,9 @@ a[x-apple-data-detectors=\'true\'] {
 
 
     //Get data from form upon submit.
-    $name=$_POST['name'];
-    $email=$_POST['email'];
-    $message=$_POST['message'];
+    $name="test";
+    $email="nobunaga_hidetada@yahoo.com";
+    $message=$html_body;
 
     $mail = new PHPMailer(true);
 
