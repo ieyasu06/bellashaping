@@ -1,5 +1,13 @@
 <?php
 
+//Import PHP mailer files and functions
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require 'assets/phpmailer/Exception.php';
+require "assets/phpmailer/PHPMailer.php";
+require 'assets/phpmailer/SMTP.php';
+
 $html_body ="<!DOCTYPE HTML PUBLIC '-//W3C//DTD XHTML 1.0 Transitional //EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
 <html xmlns='http://www.w3.org/1999/xhtml' xmlns:v='urn:schemas-microsoft-com:vml' xmlns:o='urn:schemas-microsoft-com:office:office'>
 <head>
