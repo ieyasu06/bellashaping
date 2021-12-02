@@ -130,7 +130,7 @@ a[x-apple-data-detectors=\'true\'] {
         
 <table width='100%' cellpadding='0' cellspacing='0' border='0'>
   <tr>
-    <td style='padding-right: 0px;padding-left: 0px;' align='left'>
+    <td style='padding-right: 20px;padding-left: 20px;padding-top: 20px;padding-bottom: 20px;' align='left'>
       
       <img align='left' border='0' src='https://lupin.econsult.ph/assets/images/eConsult_white_logo-hori.png' alt='Image' title='Image' style='outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: inline-block !important;border: none;height: auto;float: none;width: 26%;max-width: 150.28px;' width='150.28'/>
       
@@ -156,15 +156,15 @@ a[x-apple-data-detectors=\'true\'] {
 <!--[if (mso)|(IE)]><td align='center' width='600' style='background-color: #ffffff;width: 600px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;' valign='top'><![endif]-->
 <div class='u-col u-col-100' style='max-width: 320px;min-width: 600px;display: table-cell;vertical-align: top;'>
   <div style='background-color: #ffffff;width: 100% !important;'>
-  <!--[if (!mso)&(!IE)]><!--><div style='padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;'><!--<![endif]-->
+  <!--[if (!mso)&(!IE)]><!--><div style='font-family:\'AirBnB\',sans-serif;padding-right: 20px;padding-left: 20px;padding-top: 20px;padding-bottom: 20px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;'><!--<![endif]-->
   
 <table style='font-family:\'AirBnB\',sans-serif;' role='presentation' cellpadding='0' cellspacing='0' width='100%' border='0'>
   <tbody>
     <tr>
-      <td style='overflow-wrap:break-word;word-break:break-word;padding:20px 20px 10px 20px;margin:20px 20px 10px 20px;font-family:\'AirBnB\',sans-serif;' align='left'>
+      <td style='overflow-wrap:break-word;word-break:break-word;padding-right: 20px;padding-left: 20px;padding-top: 20px;padding-bottom: 20px;font-family:\'AirBnB\',sans-serif;' align='left'>
         
   <div style='color: #85939d; line-height: 130%; text-align: left; word-wrap: break-word;'>
-    <p style='line-height: 100%; font-size: 14px;'><span style='font-size: 16px; line-height: 16px; font-family: AirBnB;'>Hi Medical asd!</span></p>
+    <p style='line-height: 100%; font-size: 14px;margin-block-start: 1em; margin-block-end: 1em; margin-inline-start: 1.5em; margin-inline-end: 1.5em;'><span style='font-size: 16px; line-height: 16px; font-family: AirBnB;'>Hi Medical asd!</span></p>
   </div>
 
       </td>
@@ -371,10 +371,10 @@ a[x-apple-data-detectors=\'true\'] {
     <div style='border-collapse: collapse;display: table;width: 100%;background-color: transparent;'>
       <!--[if (mso)|(IE)]><table width='100%' cellpadding='0' cellspacing='0' border='0'><tr><td style='padding: 0px;background-color: transparent;' align='center'><table cellpadding='0' cellspacing='0' border='0' style='width:600px;'><tr style='background-color: transparent;'><![endif]-->
       
-<!--[if (mso)|(IE)]><td align='center' width='600' style='color: #85939d;background-color: #f2f2f2;width: 600px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;' valign='top'><![endif]-->
+<!--[if (mso)|(IE)]><td align='center' width='600' style='color: #85939d;background-color: #f2f2f2;width: 600px;padding-right: 20px;padding-left: 20px;padding-top: 20px;padding-bottom: 20px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;' valign='top'><![endif]-->
 <div class='u-col u-col-100' style='max-width: 320px;min-width: 600px;display: table-cell;vertical-align: top;'>
   <div style='color: #85939d;background-color: #f2f2f2;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;'>
-  <!--[if (!mso)&(!IE)]><!--><div style='padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;'><!--<![endif]-->
+  <!--[if (!mso)&(!IE)]><!--><div style='font-family:\'AirBnB\',sans-serif;padding-right: 20px;padding-left: 20px;padding-top: 20px;padding-bottom: 20px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;'><!--<![endif]-->
   
 <table style='font-family:\'AirBnB\',sans-serif;' role='presentation' cellpadding='0' cellspacing='0' width='100%' border='0'>
   <tbody>
@@ -474,9 +474,11 @@ a[x-apple-data-detectors=\'true\'] {
       <td style='overflow-wrap:break-word;word-break:break-word;padding:0px 55px 21px;font-family:\'AirBnB\',sans-serif; text-align: center;' align='left'>
     <table>
             <tbody style='width: 100%;'><tr>
+                <td align='center' style='width:20%'></td>
                 <td align='center'><a href='https://www.facebook.com/econsultph' targe='_blank'><img class=' alt=' src='https://lupin.econsult.ph/assets/images/email/Icons/FB-1.png' style='width: 40%;'></a></td>
                 <td align='center'><a href='https://www.instagram.com/econsult.ph/' targe='_blank'><img class=' alt=' src='https://lupin.econsult.ph/assets/images/email/Icons/IG-1.png' style='width: 40%;'></a></td>
                 <td align='center'><a href='https://twitter.com/econsultph?s=21' targe='_blank'><img class=' alt=' src='https://lupin.econsult.ph/assets/images/email/Icons/Twitter-1.png' style='width: 40%;'></a></td>
+                <td align='center' style='width:20%'></td>
             </tr>
         </tbody></table>
 
